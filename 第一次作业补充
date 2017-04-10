@@ -93,6 +93,27 @@ So that RM can see the staffing request and assign people to it. 
 - **When** save without input any valid data
 - **Then** I see the error notification as mockup
 
-Notes:
+**AC 14: data verification**
 
-1.
+- **Given** I am a CP on add roles pop up and there is a role with incomplete data
+- **When** click `SAVE`
+- **Then** I see the error notification with the vacancy
+
+### Notes:
+
+2. The data of role options should come from xxx
+3. The range of number is natural number between 0-99999
+
+### Mock up
+![mockup](https://trello-attachments.s3.amazonaws.com/57c79f44b06ac6e39e76e644/58ba8fe2831c08f54580c037/d2b1bf1b18cbc1607b38a00f62f49de2/Picture1.png)
+
+![mockup2](https://trello-attachments.s3.amazonaws.com/57c79f44b06ac6e39e76e644/58ba8fe2831c08f54580c037/2587aab6e83b753b037ac44aa99dfe50/Picture2.png)
+
+### Story Splitting
+
+1. Add role pop up: `AC 1, 12`
+2. Add a role: `AC 2, 3, 4, 5, 11`
+3. Adjust number: `AC 6, 7`
+4. Add more role:`AC 10`
+5. Delete role: `AC 8, 9`
+6. Data verification: `AC 13, 14`
