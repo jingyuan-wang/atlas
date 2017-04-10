@@ -1,0 +1,98 @@
+## Add new roles to an opportunity
+
+### Narrative:
+
+As a CP 
+I would like to add new roles to an opportunity
+So that RM can see the staffing request and assign people to it. 
+
+### Business Context  
+
+1. Help CP to manage the team and opportunity.
+2. Help RM to assign people to different roles according to specific request.
+3. Help to make sales forecast for the company.
+
+### Acceptance Criteria
+
+**AC 1: add role pop up**
+
+- **Given** I am a CP on SalesFunnel staffing tab
+- **When** click on the add roles button
+- **Then** I can start to add roles
+
+**AC 2: select role**
+
+- **Given** I am a CP on add roles pop up
+- **When** `<select role>`
+- **Then** I can choose the role I need from the drop down list
+
+**AC 3: select grade**
+
+- **Given** I am a CP on add roles pop up
+- **When** `<select grade>`
+- **Then** I can choose the grade of the role I need from the drop down list
+
+**AC 4: select office**
+
+- **Given** I am a CP on add roles pop up
+- **When** click `working office`
+- **Then** I can choose office from the dropdown list.
+
+
+**AC 5: input number**
+
+- **Given** I am a CP on add roles pop up and I want to add multiple persons to the same role, for example 3 grad devs
+- **When** I enter number 3
+- **Then** the 3 roles could all be saved
+
+**AC 6: add number**
+
+- **Given** I am a CP on add roles pop up and I want to adjust the number of a role
+- **When** click `+` once
+- **Then** the number of the role will add 1
+
+**AC 7: minus number**
+
+- **Given** I am a CP on add roles pop up and I want to adjust the number of a role
+- **When** click `-` once
+- **Then** the number of the role will minus 1
+
+**AC 8: delete added role**
+
+- **Given** I am a CP on add roles pop up, I want to delete an added role
+- **When** click the trash icon of each row
+- **Then** the role will be deleted accordingly
+
+**AC 9: delete verification**
+
+- **Given** I am a CP on add roles pop up, and there is only the last row of role
+- **When** I click the trash icon
+- **Then** the row can not be deleted
+
+**AC 10: add new roles**
+
+- **Given** I am a CP on add roles pop up
+- **When** I click `+add a new role`.
+- **Then** I can continue to add new role
+
+**AC 11: Save**
+
+- **Given** I am a CP on add roles pop up and all the information of roles are set up
+- **When** click `SAVE`.
+- **Then** I can see the added role in the opportunity
+
+**AC 12: Cancel**
+
+- **Given** I am a CP on add roles pop up
+- **When** click `CANCEL`
+- **Then** the pop up close
+
+**AC 13: data verification**
+
+- **Given** I am a CP on add roles pop up
+- **When** save without input any valid data
+- **Then** I see the error notification as mockup
+
+Notes:
+
+1.
