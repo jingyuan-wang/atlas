@@ -7,41 +7,37 @@
 1.  越大说明越不准（而不是越难，或者工作量越大），驱动BA进行新的拆分
 
 通常的做法是，找到基准卡 -- 所有Dev，QA都对改卡的大小没有异议，然后定这个卡的点数为1。然后拿出其他卡来和这张卡比较，如果更难，那么可以
-记为2。然后找下一张卡，如果比点数为2的还复杂，那可以记为3，依次类推。
-
-当然，一轮估点可能会有偏差，Dev们可以估好几轮。
+记为2。然后找下一张卡，如果比点数为2的还复杂，那可以记为3，依次类推。当然，一轮估点可能会有偏差，Dev们可以估好几轮。
 
 另外，斐波那契数列并不是唯一的方式，常用的还有T恤尺寸（S，M，L，XL，XXL），交通工具（滑板车，自行车，小汽车，卡车，火车）等等方式。这些方式可以
 让使用者彻底与可能产生人天联想的数字脱离开关系。
 
-所以新的作业（的一部分）是：
+所以新的作业（的一部分）是，翻译这篇文章
 
-翻译这篇文章[Why Progressive Estimation Scale Is So Efficient For Teams](http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html)，翻译结果写成markdown文件就好了。
+- [Why Progressive Estimation Scale Is So Efficient For Teams](http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html)
 
+翻译结果写成markdown文件就好了。
 
 ### 关于实例化需求（Specification By Example）
 
-  Acceptance Criteria
-  -------------
-
-  **AC1:**
-
-  - Given：登陆p-link首页
-  - When：点击"自定义模式"
-  - Then：打开自定义设置的侧边栏
-
-  **AC2:**
-  - Given：在首页自定义侧边栏
-  - When：勾选新项目
-  - Then：对应项目出现在左侧
-
-  **AC3:**
-  - Given：在首页自定义侧边栏
-  - When：解除勾选某项目
-  - Then：对应项目消失在左侧
+>    **AC1:**
+>
+>    - Given：登陆p-link首页
+>    - When：点击"自定义模式"
+>    - Then：打开自定义设置的侧边栏
+>
+>    **AC2:**
+>    - Given：在首页自定义侧边栏
+>    - When：勾选新项目
+>    - Then：对应项目出现在左侧
+>
+>    **AC3:**
+>    - Given：在首页自定义侧边栏
+>    - When：解除勾选某项目
+>    - Then：对应项目消失在左侧
 
 
-如果我来写AC，可能是这样的：
+如果我来写`AC`，可能是这样的：
 
 #### AC1
 
@@ -66,6 +62,14 @@
 
 区别在于，你在列举AC的时候，要通过业务语言来举出具体的例子。避免使用诸如`某选项`，`一个选项`这样的generic的描述。这也是`Specification By Example`的本意。
 
-实例化需求的作用比任何单独的BA技能都更重要，请好好学习一下。所以作业的另外一部分来了：
+实例化需求的作用比任何单独的BA技能都更重要，请好好学习一下。
 
-翻译这篇文章：[Anatomy of a good acceptance test](https://gojko.net/2010/06/16/anatomy-of-a-good-acceptance-test/)
+所以作业的另外一部分来了，翻译这篇文章：
+
+- [Anatomy of a good acceptance test](https://gojko.net/2010/06/16/anatomy-of-a-good-acceptance-test/)
+
+### 参考资料
+
+- [3 Powerful Estimation Techniques for Agile Teams](https://www.sitepoint.com/3-powerful-estimation-techniques-for-agile-teams/)
+- [邱俊涛之前翻译+整理的Story拆分模式](https://github.com/abruzzi/consulting/issues/1)
+- [邱俊涛之前写的一篇博客](http://icodeit.org/2015/01/page-object-with-site-prism/)（技术细节可以跳过，看后半部分就好了）
