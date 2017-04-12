@@ -68,6 +68,19 @@
 
 - [Anatomy of a good acceptance test](https://gojko.net/2010/06/16/anatomy-of-a-good-acceptance-test/)
 
+### Story拆分
+
+我之前在华为给客户培训Story拆分的时候，[翻译过一篇文章](https://github.com/abruzzi/consulting/issues/1)，[原文在此](http://agileforall.com/patterns-for-splitting-user-stories/)
+基本上你看完就大概知道如何做比较合理的Story拆分了。
+
+不过也有一些没有覆盖的点：
+
+- 在一个新的团队中，在第一个迭代的时候，如何估算
+- Spike如何度量及估算工作量
+
+有了这个文章做指导，请以PLink的一个需求为例，划分Story。不要被现在已有的划分方式干扰，假设你从客户那里拿到了最原始的需求，你自己如何来做拆分。
+
+
 ### 参考资料
 
 - [3 Powerful Estimation Techniques for Agile Teams](https://www.sitepoint.com/3-powerful-estimation-techniques-for-agile-teams/)
